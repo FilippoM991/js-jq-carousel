@@ -1,0 +1,44 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.slider {
+    margin:auto;
+    width: 1170px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.freccia {
+    height: 100%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.freccia i {
+    font-size: 40px;
+    color: black;
+}
+.freccia i:hover {
+    color:blue;
+}
+.immagini {
+    width: 90%;
+    height: 100%;
+}
+.immagini img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    display: none;
+}
+.immagini img.active {
+    display: block;
+}

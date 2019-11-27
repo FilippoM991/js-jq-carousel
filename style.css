@@ -7,6 +7,8 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    background-color: black;
+
 }
 .slider {
     margin:auto;
@@ -14,6 +16,7 @@
     height: 500px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .freccia {
     height: 100%;
@@ -24,7 +27,7 @@
 }
 .freccia i {
     font-size: 40px;
-    color: black;
+    color: white;
 }
 .freccia i:hover {
     color:blue;
@@ -41,4 +44,20 @@
 }
 .immagini img.active {
     display: block;
+}
+.bullet {
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.bullet i {
+    color: white;
+}
+.bullet i.active {
+    color: blue;
 }
